@@ -20,9 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		dump('wew');
+		var_dump('wew');
 
-		// $this->load->view('welcome_message');
+		$this->load->view('welcome_message');
 	}
 
 	public function sipak(){
