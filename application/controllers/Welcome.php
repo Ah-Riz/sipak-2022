@@ -18,10 +18,10 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	public function index($kriteria=[])
+	public function index()
 	{
 		$this->load->database();
-		if (count($kriteria)==0){
+		if ($_POST==null){
 			return(json_encode($this->db->query("SELECT * FROM makanan")->result()));
 		}else{
 			dump($kriteria);
