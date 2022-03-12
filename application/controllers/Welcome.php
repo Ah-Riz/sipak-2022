@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		var_dump('wew');
+		var_dump($this->db->query(`SELECT * FROM 'makanan'`)->result());
 
 		$this->load->view('welcome_message');
 	}
