@@ -532,7 +532,7 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 
-$config['base_url'] = 'your_heroku_link';
-$config['index_page'] = 'views/pages/home.php';
-$config['uri_protocol'] = 'REQUEST_URI';
-$config['sess_save_path'] = sys_get_temp_dir();
+// $config['base_url'] = 'your_heroku_link';
+// $config['index_page'] = 'views/pages/home.php';
+// $config['uri_protocol'] = 'REQUEST_URI';
+// $config['sess_save_path'] = sys_get_temp_dir();
