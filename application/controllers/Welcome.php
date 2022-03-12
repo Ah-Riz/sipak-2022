@@ -24,13 +24,13 @@ class Welcome extends CI_Controller  {
 	 */
 	public function index()
 	{
-		$this->load->database();
-		if ($_POST==null){
-			return(json_encode($this->db->query("SELECT * FROM makanan")->result()));
-		}else{
-			dump($kriteria);
-			var_dump($this->db->query("SELECT * FROM makanan")->result());
-		}
+		// $this->load->database();
+		// if ($_POST==null){
+		// 	return(json_encode($this->db->query("SELECT * FROM makanan")->result()));
+		// }else{
+		// 	dump($kriteria);
+		// 	var_dump($this->db->query("SELECT * FROM makanan")->result());
+		// }
 
 		$this->load->view('welcome_message');
 	}
