@@ -1,8 +1,9 @@
 <?php
-// defined('BASEPATH') OR exit('No direct script access allowed');
-require APPPATH . 'libraries/RESTController.php';
+defined('BASEPATH') OR exit('No direct script access allowed');
+// require APPPATH . 'libraries/RESTController.php';
+use chriskacerguis\RestServer\RestController;
 
-class Welcome extends CI_Controller {
+class Welcome extends RestController  {
 
 	/**
 	 * Index Page for this controller.
