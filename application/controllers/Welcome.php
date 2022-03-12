@@ -24,6 +24,7 @@ class Welcome extends CI_Controller  {
 	 */
 	public function index()
 	{
+		var_dump($_POST);
 		$this->load->database();
 		if ($_POST==null){
 			echo(json_encode($this->db->query("SELECT makanan FROM makanan")->result()));
