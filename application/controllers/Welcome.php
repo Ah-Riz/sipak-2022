@@ -1,8 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-require APPPATH . '/libraries/REST_Controller.php';
-use Restserver\Libraries\REST_Controller;
+// defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
@@ -25,7 +22,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->database();
 		if ($_POST==null){
-			$this->response(json_encode($this->db->query("SELECT * FROM makanan")->result()));
+			return(json_encode($this->db->query("SELECT * FROM makanan")->result()));
 		}else{
 			dump($kriteria);
 			var_dump($this->db->query("SELECT * FROM makanan")->result());
