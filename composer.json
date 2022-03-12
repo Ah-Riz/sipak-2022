@@ -1,5 +1,6 @@
 {
 	"require": {
-	  "php": "^7.2"
+	  "php": "^7.2",
+		"chriskacerguis/codeigniter-restserver": "^3.1"
 	}
   }
