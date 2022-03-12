@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 // require APPPATH . 'libraries/RESTController.php';
-require '/app/vendor/chriskacerguis/codeigniter-restserver/src/RestController.php';
+require '/app/application/controllers/RestController.php';
 // use chriskacerguis\RestServer\RestController;
 
 class Welcome extends RestController  {
