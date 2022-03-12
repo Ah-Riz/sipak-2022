@@ -22,9 +22,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->database();
 		if (count($kriteria)==0){
-			var_dump($this->db->query("SELECT * FROM makanan")->result());
-		}else{
 			var_dump('qwe');
+		}else{
+			var_dump($this->db->query("SELECT * FROM makanan")->result());
 		}
 
 		$this->load->view('welcome_message');
