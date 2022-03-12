@@ -22,14 +22,13 @@ class Welcome extends CI_Controller  {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	public function index()
+	public function index($kriteria='')
 	{
-		var_dump($_POST);
 		$this->load->database();
-		if ($_POST==null){
+		if ($kriteria==''){
 			echo(json_encode($this->db->query("SELECT makanan FROM makanan")->result()));
 		}else{
-			var_dump($_POST);
+			var_dump($kriteria);
 			// var_dump($this->db->query("SELECT * FROM makanan")->result());
 		}
 		// var_dump(base_url());
