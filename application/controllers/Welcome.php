@@ -1,6 +1,6 @@
 <?php
 // defined('BASEPATH') OR exit('No direct script access allowed');
-require APPPATH . 'libraries/REST_Controller.php';
+require APPPATH . 'libraries/RESTController.php';
 
 class Welcome extends CI_Controller {
 
