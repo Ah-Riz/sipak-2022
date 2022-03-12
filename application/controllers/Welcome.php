@@ -21,7 +21,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->database();
-		var_dump($this->db->query("SELECT * FROM 'makanan'")->result());
+		var_dump($this->db->query("SELECT * FROM makanan")->result());
 
 		$this->load->view('welcome_message');
 	}
