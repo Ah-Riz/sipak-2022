@@ -22,13 +22,13 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->database();
 		if (count($kriteria)==0){
-			return($this->db->query("SELECT * FROM makanan")->result());
+			dump($this->db->query("SELECT * FROM makanan")->result());
 		}else{
 			dump($kriteria);
 			var_dump($this->db->query("SELECT * FROM makanan")->result());
 		}
 
-		$this->load->view('welcome_message');
+		// $this->load->view('welcome_message');
 	}
 
 	public function sipak(){
