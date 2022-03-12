@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require APPPATH . 'libraries/RESTController.php';
+// require APPPATH . 'libraries/RESTController.php';
 // require '/app/application/controllers/RestController.php';
-// require '/app/vendor/chriskacerguis/codeigniter-restserver/src/RestController.php';
-// use chriskacerguis\RestServer\RestController;
+require '/app/vendor/chriskacerguis/codeigniter-restserver/src/RestController.php';
+use chriskacerguis\RestServer\RestController;
 
 class Api extends RestController  {
 
