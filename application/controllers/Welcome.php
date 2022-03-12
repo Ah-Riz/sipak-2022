@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-// require APPPATH . 'libraries/RESTController.php';
-use chriskacerguis\RestServer\RestController;
+require APPPATH . 'libraries/RESTController.php';
+// use chriskacerguis\RestServer\RestController;
 
 class Welcome extends RestController  {
 
