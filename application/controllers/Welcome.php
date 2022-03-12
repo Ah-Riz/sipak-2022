@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->database();
 		if ($_POST==null){
-			return(json_encode($this->db->query("SELECT * FROM makanan")->result()));
+			$this->response(json_encode($this->db->query("SELECT * FROM makanan")->result()));
 		}else{
 			dump($kriteria);
 			var_dump($this->db->query("SELECT * FROM makanan")->result());
