@@ -25,7 +25,7 @@ class Welcome extends CI_Controller  {
 	public function index($kriteria='')
 	{
 		var_dump($kriteria);
-		var_dump($_POST);
+		var_dump($this->_POST);
 		$this->load->database();
 		if ($kriteria==''){
 			echo(json_encode($this->db->query("SELECT makanan FROM makanan")->result()));
