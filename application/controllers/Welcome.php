@@ -42,7 +42,7 @@ class Welcome extends CI_Controller  {
 }
 
 
-class Api extends RestController  {
+class Api extends RESTController  {
 
 	/**
 	 * Index Page for this controller.
