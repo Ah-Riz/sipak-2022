@@ -32,7 +32,7 @@ class Welcome extends CI_Controller  {
 			var_dump($this->db->query("SELECT * FROM makanan")->result());
 		}
 
-		// $this->load->view('welcome_message');
+		$this->load->view('welcome_message');
 	}
 
 	public function sipak(){
