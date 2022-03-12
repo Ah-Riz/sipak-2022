@@ -24,9 +24,10 @@ class Welcome extends CI_Controller  {
 	 */
 	public function index()
 	{
+		$this->load->library('RestController');
 		$this->load->database();
 		if ($_POST==null){
-			return(json_encode($this->db->query("SELECT * FROM makanan")->result()));
+			var_dump(json_encode($this->db->query("SELECT * FROM makanan")->result()));
 		}else{
 			dump($kriteria);
 			var_dump($this->db->query("SELECT * FROM makanan")->result());
