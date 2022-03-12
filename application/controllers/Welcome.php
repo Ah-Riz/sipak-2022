@@ -31,6 +31,7 @@ class Welcome extends CI_Controller  {
 		// 	dump($kriteria);
 		// 	var_dump($this->db->query("SELECT * FROM makanan")->result());
 		// }
+		var_dump(base_url());
 
 		$this->load->view('welcome_message');
 	}
