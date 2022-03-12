@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require '/app/vendor/chriskacerguis/codeigniter-restserver/src/RestController.php';
 // use chriskacerguis\RestServer\RestController;
 
-class Welcome extends RestController  {
+class Welcome extends CI_Controller  {
 
 	/**
 	 * Index Page for this controller.
